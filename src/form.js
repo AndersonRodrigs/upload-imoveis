@@ -2,7 +2,7 @@ export function form() {
   return `   
       <form action="" id="upload">
         <h1>Imovel dados</h1>
-        <h3>Imagens</h3>
+        <h2>Imagens</h2>
         <div class="images-section">
           <label for="image1">+</label>
           <input type="file" id="image1" class="image" />
@@ -28,7 +28,9 @@ export function form() {
           <input type="text" id="tamanho" placeholder="Tamanho" />
           <input type="text" id="area-construida" 
           placeholder="Área  Construida" />
-        </div>
+          </div>
+          <input type="number" id="telefone-corretor" 
+          placeholder="Telefone para contato" />
         <textarea
           id="descricao"
           name="descricao"

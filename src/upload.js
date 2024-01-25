@@ -23,6 +23,7 @@ async function uploadImovel() {
   const inputTamanho = document.getElementById('tamanho').value
   const inputAreaConstruida = document.getElementById('area-construida').value
   const inputPreco = document.getElementById('preco').value
+  const telefoneCorretor = document.getElementById('telefone-corretor').value
 
   const { error } = await supabase
     .from('imoveis')
@@ -34,7 +35,8 @@ async function uploadImovel() {
         descricao: inputDescricao,
         tamanho: inputTamanho,
         areaConstruida: inputAreaConstruida,
-        preco: inputPreco
+        preco: inputPreco,
+        telefoneCorretor: telefoneCorretor
       }
     ])
     .select()
